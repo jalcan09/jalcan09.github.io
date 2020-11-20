@@ -53,31 +53,31 @@ table {
 
 
 
-/* ---------- Hello, my name is Jas Alcantara and this is the beginning of my CONTACT PAGE CSS for 318 Digital Typography November 2019 ------------ */
+/* ---------- Hello, my name is Jas Alcantara and this is the beginning of my CONTACT PAGE CSS for 318 Digital Typography November 2020 ------------ */
 
 html, body {
   height: 100%;
   width: 100%;
   padding: 0;
   margin: 0;
-  background: url(images/bricks_bg.jpg)
+  background: url(images/elnidophilippinestransform.jpg)
 	center center fixed no-repeat;
     background-size: cover;
 }
 
 .center {
-    width: 800px;
+    width: 800px; 
 	padding: 2%;
     margin: 100px auto;
  	background: rgba(0, 150, 178, .75); /*this uses opacity of 75% for the background color*/
 	text-align: center;
-	border: 4px dashed white;
+	border: 4px white; /*change dashed white to white*/
 }
 
    
 #logo {
     margin-bottom: 16px;
-	border: 3px dashed red;
+	border: 3px white;
 	text-align: center;
 }
 
@@ -85,9 +85,9 @@ h1 {
 	font-family: parkside, cursive;
     font-weight: 400;
     font-style: normal;
-	font-size: 2em;
+	font-size: 2.5em;
     margin: 0px auto 10px auto;
-    color: #fff;
+    color: #99e6ff;
 }
 
 h2 {
@@ -107,7 +107,7 @@ p {
     font-style: normal;
 	font-size: 1.2em;
     line-height: 1.6;
-    color: #fff;
+    color: #005c99; /*changed it from black to blue */
 }
     
 nav{
@@ -115,10 +115,10 @@ nav{
     font-size: 1.2em;
     width: 400px;
     margin: 0 auto;
-    border: dashed turquoise;
-    border-width: 3px 0;
+    border: black;
+    border-width: 10px 0;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 1em;
     }   
 
 nav li{
@@ -127,12 +127,12 @@ nav li{
 
 nav a{
     display:inline-block;
-    padding: 10px; 
+    padding: 20px; 
     }
 
 
 a{
-   color:#444;
+   color:#000f1a;
    text-decoration: none;
    font-weight: bold;
    }
