@@ -87,7 +87,7 @@ h1 {
     font-style: normal;
 	font-size: 2.5em;
     margin: 0px auto 10px auto;
-    color: #99e6ff;
+    color: #b3cbff; /*changed from light to dark blue to whiteish */
 }
 
 h2 {
@@ -100,14 +100,13 @@ h2 {
     padding: 0px 0px;
     margin: 0px auto 25px auto;
 }
-
 p {
 	font-family: parkside, cursive;
     font-weight: 400;
     font-style: normal;
 	font-size: 1.2em;
     line-height: 1.6;
-    color: #005c99; /*changed it from black to blue */
+    color: #4d88ff; /*changed it from black to blue to dark blue */
 }
     
 nav{
