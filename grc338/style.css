@@ -1,0 +1,240 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+html {
+background-color:rgba(85,131,99,0.5);
+}
+
+body {
+	font-family: "dico-sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+div.home-container { 
+	background: url(plantbackground.jpg) center center fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	max-width: 60em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+    }
+
+div.container {
+	position: relative;
+	min-height: 100vh;
+	background-color: rgb(255,255,255);
+	padding-bottom: 4em;
+	max-width: 60em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	}
+
+/* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
+
+
+main { 
+	padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+	}
+
+img {
+    width: 100%; /*Please leave this line.*/
+    display: block;
+	margin-left: 1em;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 50% auto;
+	background: rgb(255,255,255);
+	padding: 2em 1em 1em;
+	}
+
+h1 {
+	width: 60%;
+	font-family: "bookmania", serif;
+	font-weight: 300;
+	font-style: normal;
+	}
+
+h2, h3, h4 {
+	font-family: "fp-dancer-serif", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	font-variation-settings: "wght" 400; 
+	max-height: 1em;
+	}
+
+/* h4 {
+	margin-left: 1.5em;
+} */
+
+h2 {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0.5em 0em 1em 0.75em;
+	}
+	
+h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0em 0em 0em 1em;
+}
+
+h5 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 1em 0em 0em 0em;
+	width: 60%;
+	font-family: "bookmania", serif;
+	font-weight: 300;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none ;
+	}
+
+nav ul  {
+	text-align: right;
+	}
+	
+ul li 	{
+	list-style-type: none;
+}
+
+figure {
+	margin-bottom: 5em;
+}
+
+main.menu ul {
+	margin: 1em 1em 1em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	column-gap: 5em;
+}	
+
+main.menu ul li {
+	margin: 0em;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	margin: 0 0 1em 1em;
+	align-items: start;
+}	
+
+p {
+	margin: 1em 0em 0.5em;
+	}
+	
+p.description {
+	grid-column: 1/3;
+	margin: 0em;
+	min-height: 5em;
+	}
+	
+
+p.price {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	color: rgb(85,131,99);
+	text-align: right;
+	margin: 0em;
+	}
+	
+nav ul li {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 1.5em;
+	margin-right: 0.5em
+	margin-top: 3em;
+	}
+	
+nav ul li a {
+	color: rgb(255,255,255);
+	background-color: rgb(85,131,99);
+	padding: 0.5em;
+	margin-right: 0.5em;
+	}
+	
+
+p.slogan {
+	
+	margin: 1em 1em 1em 0.5em;
+	color: rgb(255,255,255);	
+	background-color: rgba(85,131,99,0.5);
+	}
+	
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem; 
+  box-sizing: border-box;
+  padding: 1em 1em 1.5em 0.5em;
+  background: rgb(85,131,99);
+  color: rgb(255,255,255);
+}
+
+address {
+	color: rgb(85,131,99);
+	}
+
+footer p {
+	margin: 0em;
+	font-family: "fp-dancer-serif", sans-serif;
+	font-weight: 400;
+	font-style: normal;	
+}
+
+nav ul li.selected a { 
+	color: rgb(255,255,255);
+	background-color: rgba(85,131,99,0.6);
+	margin-bottom: 5em;
+}
+
+article {
+	max-width: 40em;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 3em;
+}
+
+article.contact{
+	border-top: rgb(85,131,99) solid ;
+	}
+	
+@media screen and (min-width: 60em) {
+nav ul li {
+	display: inline;
+	font-size: 1.5em;
+	}
+
+h1 {
+	width: 25%;
+	}
+
+
+p.slogan {
+	font-size: 3em;	
+	}
+
+p {
+	grid-template-columns: 75% auto;
+	}
+}
+
+article.contact{
+display: grid;
+grid-template-columns: auto auto;
+}
+
+
+
+
