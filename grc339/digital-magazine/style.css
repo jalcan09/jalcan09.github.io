@@ -101,6 +101,63 @@ section.tertiary {
     border-top: solid 2px;
 }
 
+div.gallery{
+    max-width: 40em;
+    margin: auto;
+    padding: 0 2em 0 2em;
+}
+
+div.gallery img{
+    width: 100%;
+    object-fit: cover;
+    max-width: 50em;
+}
+
+div.gallery main{
+    position: relative;
+    padding-bottom: calc(64% + 7em);
+    overflow: hidden;
+}
+
+div.gallery figure{
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+div.gallery figcaption{
+    margin: .5em 0;
+    font-family: "effra", sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    font-style: italic;
+}
+
+div.gallery nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    max-width: 40em;
+}
+
+div.gallery input{
+    display: none;
+}
+
+input:nth-of-type(1):checked~main figure:nth-of-type(1),
+input:nth-of-type(2):checked~main figure:nth-of-type(2),
+input:nth-of-type(3):checked~main figure:nth-of-type(3),
+input:nth-of-type(4):checked~main figure:nth-of-type(4),
+input:nth-of-type(5):checked~main figure:nth-of-type(5),
+input:nth-of-type(6):checked~main figure:nth-of-type(6),
+input:nth-of-type(7):checked~main figure:nth-of-type(7),
+input:nth-of-type(8):checked~main figure:nth-of-type(8){
+    opacity: 1;
+}
+
+
 @media screen and (min-width: 60em){
 div.container{
     display: grid;
@@ -158,4 +215,28 @@ h1 {
     width: 20em;
     margin: auto;
 }
+
+@media screen and (prefers-color-scheme:dark) {
+
+    body {
+        background-color:rgb(36,62,70);
+        color: white;
+    }
+
+    h1 {  
+        background-image: url("dejabrewlogoalternate-01.svg");  
+        background-repeat: no-repeat;  
+        background-size: contain;  
+        }  
+
+    h1 img {  
+        opacity: 0;  
+        }  
+    
+     a {
+        text-decoration: none;
+        color: white;
+        }
+}
+
 }
